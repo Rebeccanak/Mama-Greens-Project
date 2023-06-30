@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'category',
     'delivery',
     'order',
+    'Ratings',
+    'Login',
     
 ]
 
