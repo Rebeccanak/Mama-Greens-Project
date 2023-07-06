@@ -2,6 +2,8 @@ from django.db import models
 
 # Create your models here
 class Payment(models.Model):
+    class Meta:
+        verbose_name_plural = "payment"
     payment_id = models.IntegerField()
     payment_amount = models.DecimalField(max_digits=8, decimal_places=2)
     customer_id = models.IntegerField()
