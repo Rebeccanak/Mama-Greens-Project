@@ -11,7 +11,7 @@ class Order(models.Model):
         verbose_name_plural = "order"
     basket = models.ForeignKey(Cart, null=True, on_delete=models.CASCADE)
     customer = models.ForeignKey(Customer,null=True, on_delete=models.CASCADE )
-    #  delivery = models.
+    delivery = models.ForeignKey(Delivery,null=True, on_delete=models.CASCADE )
 
     order_status = models.CharField(max_length=32)
     items = models.CharField(max_length=10)
