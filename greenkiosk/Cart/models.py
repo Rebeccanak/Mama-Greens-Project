@@ -1,9 +1,14 @@
 from django.db import models
+from  inventory.models import Product
+
 
 # Create your models here.
 class Cart(models.Model):
     class Meta:
         verbose_name_plural = "Cart"
+    
+    products = models.ManyToManyField(Product)
+        
     product_name = models.CharField(max_length=32)
     product_price = models.IntegerField()
     product_quantity = models.IntegerField()
