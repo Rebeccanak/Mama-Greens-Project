@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart Detail</title>
+</head>
+<body>
+    <h2>Cart #{{ cart.id }}</h2>
+    <p>Product Name: {{ cart.product_name }}</p>
+    <p>Product Price: {{ cart.product_price }}</p>
+    <p>Product Quantity: {{ cart.product_quantity }}</p>
+    <img src="{{ cart.product_image.url }}" alt="{{ cart.product_name }}"/>
+    <p>Date Added: {{ cart.date_added }}</p>
+</body>
+</html>

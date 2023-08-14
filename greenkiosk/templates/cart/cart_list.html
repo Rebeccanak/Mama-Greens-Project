@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart List</title>
+</head>
+<body>
+    <h2>Cart List</h2>
+    <ul>
+        {% for cart in carts %}
+            <li><a href="{% url 'cart_details' cart.id %}">Cart #{{ cart.id }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

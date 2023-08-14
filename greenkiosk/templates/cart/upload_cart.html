@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Delivery</title>
+    <title>Upload Cart</title>
 </head>
 <body>
-    <h2>Edit Delivery {{ delivery.id }}</h2>
+    <h2>Upload New Cart</h2>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Update Delivery</button>
+        <button type="submit">Upload Cart</button>
     </form>
 </body>
 </html>
