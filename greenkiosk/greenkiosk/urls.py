@@ -34,6 +34,8 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('inventory/', include('inventory.urls')),
+    path('order/', include('order.urls')),
+    path('delivery/',include('delivery.urls')),
   
     
     

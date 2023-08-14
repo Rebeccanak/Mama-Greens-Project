@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Delivery</title>
+</head>
+<body>
+    <h2>Upload New Delivery</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload Delivery</button>
+    </form>
+</body>
+</html>

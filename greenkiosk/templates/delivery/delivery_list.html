@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delivery List</title>
+</head>
+<body>
+    <h2>Delivery List</h2>
+    <ul>
+        {% for delivery in deliveries %}
+            <li><a href="{% url 'delivery_details' delivery.id %}">Delivery #{{ delivery.id }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

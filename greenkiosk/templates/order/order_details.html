@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .order-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-container h2 {
+            margin-top: 0;
+            color: red;
+        }
+
+        .order-container p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <h2>Order #{{ order.id }}</h2>
+        <p>Ordered by: {{ order.customer }}</p>
+        <p>Order Status: {{ order.order_status }}</p>
+        <p>Items: {{ order.items }}</p>
+        <p>Customer Information: {{ order.customer_information }}</p>
+        <p>Payment Details: {{ order.payment_details }}</p>
+        <p>Total Price: {{ order.total_price }}</p>
+        
+        <!-- Add more fields as needed -->
+    </div>
+</body>
+</html>
